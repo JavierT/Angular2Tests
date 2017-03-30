@@ -1,0 +1,16 @@
+<p [ngClass]="arrayClases">Pueden aplicarse varias clases</p>
+<p>
+  {{ dato }}
+</p>
+<p *ngFor="let objPregunta of preguntasObj">
+  {{objPregunta.pregunta}}: 
+  <br>
+  <span class="si">Si {{objPregunta.si}}</span>  
+  <span class="no">No {{objPregunta.no}}</span>
+</p>
+
+
+<div *ngFor="let post of posts">
+  <h1>{{post.title}}</h1> 
+  <p>{{post.body}}</p>
+</div>
